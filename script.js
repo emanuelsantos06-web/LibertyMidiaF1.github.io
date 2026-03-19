@@ -1,18 +1,13 @@
-style.css
+script.js
 
-/* Seleciona todo o corpo da página */
-body {
-    font-family: Arial, sans-serif; /* Define a fonte do texto */
-    text-align: center; /* Centraliza o texto */
-    margin-top: 50px; /* Espaço superior */
-}
+// Seleciona o botão pelo id
+const botao = document.getElementById("botao");
 
-/* Seleciona o botão pelo id */
-#botao {
-    padding: 10px 20px; /* Espaçamento interno */
-    background-color: blue; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Remove a borda */
-    cursor: pointer; /* Muda o cursor para mãozinha */
-}
+// Adiciona um evento de clique ao botão
+botao.addEventListener("click", function () {
+    // Mostra uma mensagem no console
+    console.log("Botão clicado!");
 
+    // Mostra um alerta na tela
+    alert("Você clicou no botão!");
+});
